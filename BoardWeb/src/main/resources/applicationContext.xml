@@ -15,6 +15,7 @@
 			<list>
 				<value>서울시 강남구 역삼동</value>
 				<value>서울시 도봉구 쌍문동</value>
+				<value>서울시 서초구 방배동</value>
 			</list>
 		</property>
 	</bean>
