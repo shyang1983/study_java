@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="polymorphism.LgTV"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.ws.model.AbstractWrapperBeanGenerator.BeanMemberFactory"/>
+<fullyQualifiedTypeName name="polymorphism.BeanFactory"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.GenericApplicationContext"/>
+<fullyQualifiedTypeName name="polymorphism.SamsungTV"/>
+<fullyQualifiedTypeName name="polymorphism.SonySpeaker"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="polymorphism.Speaker"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+<fullyQualifiedTypeName name="com.springbook.biz.CollectionBean"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>
