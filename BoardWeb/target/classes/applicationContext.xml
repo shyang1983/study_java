@@ -2,9 +2,17 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:p="http://www.springframework.org/schema/p"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
-	<bean id="tv" class="polymorphism.SamsungTV" p:speaker-ref="sony" p:price="1000">		
+    <!-- 어노테이션 기반 설정 -->
+	<context:component-scan base-package="polymorphism"></context:component-scan>
+	
+	<bean class="polymorphism.SonySpeaker" />
+	
+	<!-- bean 기반 설정 -->	 
+	<!-- <bean id="tv" class="polymorphism.SamsungTV" p:speaker-ref="sony" p:price="1000">		
 	</bean>
 	
 	<bean id="sony" class ="polymorphism.SonySpeaker" />
@@ -17,6 +25,7 @@
 				<value>서울시 도봉구 쌍문동</value>
 			</list>
 		</property>
-	</bean>
+	</bean> 
+	-->
 	
 </beans>

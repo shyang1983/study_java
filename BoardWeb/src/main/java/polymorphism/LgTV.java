@@ -1,8 +1,22 @@
 
 package polymorphism;
+import javax.annotation.Resource;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component("tv")
 public class LgTV implements TV {
-
+	@Autowired
+	//@Qualifier("apple")
+	//@Resource(name="apple")
+	private Speaker speaker;
+	
+	public LgTV() {
+		System.out.println("===> LgTV  按眉 积己");
+	}
+	
 	@Override
 	public void powerOn() {
 		// TODO Auto-generated method stub
@@ -18,12 +32,12 @@ public class LgTV implements TV {
 	@Override
 	public void volumeUp() {
 		// TODO Auto-generated method stub
-		System.out.println("LgTV --- 家府 棵赴促");
+		speaker.volumUp();
 	}
 
 	@Override
 	public void volumeDown() {
 		// TODO Auto-generated method stub
-		System.out.println("LgTV --- 家府 郴赴促");
+		speaker.volumDown();
 	}
 }
